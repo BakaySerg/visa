@@ -1,0 +1,49 @@
+/*===============================
+  popups
+================================*/
+// .mfp-bg {background-color: rgba()}
+
+.mfp-close-btn-in .mfp-close{
+	color: $primary;
+	opacity: 1;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	right: 20px;
+	top: 10px;
+	font-size: 34px;
+	font-family: inherit;
+	transition: .3s;
+}
+.mfp-close-btn-in .mfp-close:hover{color: $accent2}
+
+.popup {
+   position: relative;
+   width: 100%;
+   background-color: #fff;
+   box-shadow: 0 10px 20px rgba(1,2,2,.06),0 0 20px rgba(0,0,0,.04);
+   border-radius: 5px;
+   margin: auto;
+   &--small {
+      max-width: 520px;
+      padding: 40px 30px;
+      text-align: center;
+      @media (max-width: 576px){
+         padding: 30px 25px;
+      }
+   }
+   &__icon {
+      display: block;
+      margin: -0.7em auto 2em;
+      width: 60px;
+      height: 60px;
+      svg {
+         max-width: 100%;
+         fill: $accent1;
+      }
+   }
+   &__remark {
+      font-size: 1.4em;
+      margin-bottom: 0;
+   }
+}

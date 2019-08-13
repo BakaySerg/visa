@@ -1,0 +1,18 @@
+//mixins & functions
+
+//em -> px
+$body-font-size: 18; // body font-size
+@function em($pixels, $context: $body-font-size) {
+  @return #{$pixels/$context}em;
+}
+
+//vertical align
+@mixin valign(){
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    min-height: inherit;
+    width: .1px;
+  }
+}

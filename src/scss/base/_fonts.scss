@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'some';
+  src: local('some light'), local('some-light'), url('../fonts/some-light.woff2') format('woff2'), url('../fonts/some-light.woff') format('woff');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'some';
+  src: local('some regular'), local('some-regular'), url('../fonts/some-regular.woff2') format('woff2'), url('../fonts/some-regular.woff') format('woff');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'some';
+  src: local('some bold'), local('some-bold'), url('../fonts/some-bold.woff2') format('woff2'), url('../fonts/some-bold.woff') format('woff');
+  font-weight: 700;
+}
