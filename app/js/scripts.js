@@ -86,9 +86,9 @@ $(document).ready(function () {
 		arrows:false,
 		infinite: true,
 		speed: 500,
-		slidesToShow: 5,
-		slidesToScroll: 2,
-		touchThreshold: 29,
+		slidesToShow: 4,
+		// slidesToScroll: 2,
+		touchThreshold: 100,
 		responsive: [{
 			breakpoint: 1023,
 			settings: {slidesToShow: 4}
@@ -113,8 +113,8 @@ $(document).ready(function () {
 	// submit
 	var form = document.forms['feedback'];
 
-	$(form).on('submit', function (ev) {
-      ev.preventDefault();
+	$(form).on('submit', function (e) {
+      e.preventDefault();
       $.ajax({
         type: 'POST',
         url: 'mail.php',
@@ -135,8 +135,8 @@ $(document).ready(function () {
 
 });
 
-$(function() {
-	setTimeout(function() {
-		document.body.classList.remove("initial")
-	}, 400);
-});
+// $(function() {
+// 	setTimeout(function() {
+// 		document.body.classList.remove("initial")
+// 	}, 400);
+// });

@@ -1,7 +1,7 @@
 //mixins & functions
 
 //em -> px
-$body-font-size: 18; // body font-size
+$body-font-size: 16; // body font-size
 @function em($pixels, $context: $body-font-size) {
   @return #{$pixels/$context}em;
 }

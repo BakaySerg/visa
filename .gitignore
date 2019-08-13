@@ -6,3 +6,4 @@
 /**/*.psd
 /**/Thumbs.db
 *.map
+package-lock.json
