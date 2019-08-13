@@ -9,6 +9,7 @@
   "author": "Bakay_S",
   "license": "ISC",
   "devDependencies": {
+    "lodash.template": ">=4.5.0",
     "browser-sync": "^2.26.5",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
