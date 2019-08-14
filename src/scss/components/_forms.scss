@@ -7,19 +7,21 @@
 	white-space: nowrap;
 	background-color: $accent3;
 	color: $primary;
-	box-shadow: 0 10px 40px rgba(44, 1, 98, 0.35);
+	box-shadow: 0 10px 40px rgba(44,1,98,.35);
 	border-radius: 25px;
 	padding: 23px calc(1.4% + 23px);
 	font-size: 1.4em;
 	font-weight: 500;
 	font-family: inherit;
 	line-height: 1.1;
-	transition:.4s;
+	transition:.35s;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	outline-color: transparent;
 	cursor: pointer;
 	&:hover {
-		background-color: $accent2;
+		background-color: #ff7c34;
+		box-shadow: 0 10px 40px rgba(44,1,98,.5);
+		color: #fff;
 	}
 	@media(max-width: 380px){
 		margin: 10px auto 0;
