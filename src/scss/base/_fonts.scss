@@ -1,15 +1,25 @@
 @font-face {
-  font-family: 'some';
-  src: local('some light'), local('some-light'), url('../fonts/some-light.woff2') format('woff2'), url('../fonts/some-light.woff') format('woff');
-  font-weight: 300;
+  font-family: 'gothampro';
+  src: local('gothampro medium'), local('gothampro-medium'), url('../fonts/gothampromedium.woff') format('woff2'), url('../fonts/gothampromedium.woff') format('woff');
+  font-weight: 500;
 }
 @font-face {
-  font-family: 'some';
-  src: local('some regular'), local('some-regular'), url('../fonts/some-regular.woff2') format('woff2'), url('../fonts/some-regular.woff') format('woff');
+  font-family: 'gothampro';
+  src: local('gothampro regular'), local('gothampro-regular'), url('../fonts/gothampro-regular.woff2') format('woff2'), url('../fonts/gothampro-regular.woff') format('woff');
   font-weight: 400;
 }
 @font-face {
-  font-family: 'some';
-  src: local('some bold'), local('some-bold'), url('../fonts/some-bold.woff2') format('woff2'), url('../fonts/some-bold.woff') format('woff');
+  font-family: 'gothampro';
+  src: local('gothampro bold'), local('gothampro-bold'), url('../fonts/gothampro-bold.woff2') format('woff2'), url('../fonts/gothampro-bold.woff') format('woff');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'gothampro';
+  src: local('gothampro black'), local('gothampro-bold'), url('../fonts/gothampro-bold.woff2') format('woff2'), url('../fonts/gothampro-bold.woff') format('woff');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'yanonekaffeesatz';
+  src: local('yanonekaffeesatz'), local('gothampro-bold'), url('../fonts/yanonekaffeesatz.woff2') format('woff2'), url('../fonts/yanonekaffeesatz.woff') format('woff');
   font-weight: 700;
 }

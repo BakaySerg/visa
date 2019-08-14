@@ -3,6 +3,31 @@ $(document).ready(function () {
 
 	$("img, a").on("dragstart", function(e) {e.preventDefault();});
 
+	//top-show
+	function sticky(){
+      $(window).scroll(function() {
+        var hedHeight = $(".header").height();
+        var winTop = $(window).scrollTop();
+      //   $('.navbar-collapse').collapse('hide');
+
+          if(winTop >= hedHeight + 40){
+           $("#top-fixed").addClass("slideInDown");
+         } else {
+           $("#top-fixed").removeClass("slideInDown");
+         }
+      });
+   }
+	sticky();
+
+	//parallax
+	// if (window.matchMedia('(min-width: 1025px)').matches) {
+	// 	skrollr.init({
+	// 	smoothScrolling: true,
+	// 	smoothScrollingDuration: 100,
+	// 	forceHeight: !1
+	// 	});
+	// };
+
 	// Scroll-anim (only desktop)
 	var ww = $(window).width();
 
@@ -13,63 +38,11 @@ $(document).ready(function () {
 		});
 	};
 
-	// menu dropdown
-	const nav = $('.navbar');
-	const btn = $('.navbar-toggle');
-	btn.on('click', function(e) {
-		e.preventDefault();
-		nav.toggleClass('navbar--open');
-	});
+	// $('.scroll-top').click(function(){
+	// 	$("html, body").stop().animate({scrollTop: 0}, {duration: 800});
+	// 	return false;
+	// });
 
-	$(window).on('scroll', function() {
-		if((parseInt($(window).scrollTop()) > 4)) {
-			nav.removeClass('navbar--open');
-		}
-	});
-
-	$('.scroll-top').click(function(){
-		$("html, body").stop().animate({scrollTop: 0}, {duration: 800});
-		return false;
-	});
-
-	$('.typal').click(function(e){
-		$(this).find('[data-title]').removeClass('hover');
-		if ($(e.target).is('[data-title]')) {
-			$(e.target).addClass('hover');
-		}
-	});
-
-	/**
-	 * slider
-	 */
-	$('.slider').slick({
-		dots: true,
-		arrows:false,
-		infinite: true,
-		speed: 500,
-		slidesToShow: 4,
-		// slidesToScroll: 2,
-		touchThreshold: 100,
-		responsive: [{
-			breakpoint: 1023,
-			settings: {slidesToShow: 4}
-		}, {
-			breakpoint: 767,
-			settings: {slidesToShow: 3}
-		}, {
-			breakpoint: 640,
-			settings: {slidesToShow: 2}
-		}, {
-			breakpoint: 480,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1,
-				// centerMode: true,
-				arrows: false,
-				// centerPadding: '12%'
-			}
-		}]
-	});
 
 	// submit
 	var form = document.forms['feedback'];

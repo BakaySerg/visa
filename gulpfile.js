@@ -1,5 +1,6 @@
 var   gulp          = require('gulp'),
 		// gutil         = require('gulp-util'),
+		wait = require('gulp-wait'),
 		sass          = require('gulp-sass'),
 		browserSync   = require('browser-sync'),
 		concat        = require('gulp-concat'),
@@ -34,9 +35,10 @@ gulp.task('layout', function () {
 // #css
 gulp.task('styles', function() {
 	return gulp.src('src/scss/**/*.scss')
+	.pipe(wait(200))
 	.pipe(plumber())
 	.pipe(sourcemaps.init())
-	// .pipe(sass({ outputStyle: 'expanded' }))
+	.pipe(sass({ outputStyle: 'expanded' }))
 	.pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
 	// .pipe(rename({ suffix: '.min', prefix : '' }))
 	.pipe(autoprefixer(['last 2 versions']))
@@ -76,7 +78,7 @@ gulp.task('scripts', function() {
 // });
 
 gulp.task('watch', function() {
-	gulp.watch('src/scss/**/*.scss',{readDelay: 950}, gulp.series('styles'));
+	gulp.watch('src/scss/**/*.scss',{readDelay: 100}, gulp.series('styles'));
 	gulp.watch(['libs/**/*.js', 'src/js/main.js'], gulp.series('scripts'));
 	gulp.watch('src/**/*.html', gulp.series('layout'))
 });

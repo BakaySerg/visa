@@ -17,7 +17,6 @@
 	font-family: inherit;
 	line-height: 1.1;
 	letter-spacing: .05em;
-	margin: 1.4em auto 0;
 	transition:.4s;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	outline-color: transparent;
@@ -62,7 +61,7 @@
 		font-size: 1em;
 		letter-spacing: .01em;
 		color: $primary;
-		border: 1px solid $text-muted;
+		// border: 1px solid $text-muted;
 		padding-left: 18px;
 		padding-right: 9px;
 		margin-bottom: 28px;

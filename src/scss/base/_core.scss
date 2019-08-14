@@ -1,14 +1,14 @@
 /*--- main styles ---*/
 body {
 	position: relative;
-	color: $primary;
-	font: 17px 'Lato', Arial, sans-serif;
+	// color: $primary;
+	font: 16px 'Lato', Arial, sans-serif;
 	font-weight: normal;
 	line-height: 1.51;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	@media (max-width: 359px) {
-		font-size: 16px;
+		font-size: 15px;
 	}
 }
 .wrapper {
