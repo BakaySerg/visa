@@ -6,7 +6,7 @@ $(document).ready(function () {
 	//top-show
 	function sticky(){
       $(window).scroll(function() {
-        var hedHeight = $(".header").height();
+        var hedHeight = $(".top").height();
         var winTop = $(window).scrollTop();
       //   $('.navbar-collapse').collapse('hide');
 
