@@ -1,9 +1,3 @@
-.intro {
-   min-height: 110vh;
-   padding: calc(12em + 4vh) 0;
-   background: url(../img/intro/bg.svg) center no-repeat;
-   background-size: cover
-}
 .title {
    font-size: em(72);
    line-height: 1.3;
@@ -25,13 +19,32 @@
          content: '';
          z-index: -1;
          position: absolute;
-         bottom: 0;
          height: 90%;
-         left: 0.3em;
-         right: 0.3em;
+         bottom: -.1em;
+         left: -.1em;
+         right: -.1em;
          background-repeat: no-repeat;
          background-size: contain;
-         background-image: url(../img/decor/ac-big-sm.svg);
+         background-position: center
+         // background-image: url(../img/decor/ac-big-sm.svg);
       }
    }
+}
+.ac {
+   &-big-xl:before{ background-image: url(../img/decor/ac-big-xl.svg);}
+   &-big-md:before{ background-image: url(../img/decor/ac-big-md.svg);}
+   &-big-sm:before{ background-image: url(../img/decor/ac-big-sm.svg);}
+   &-big:before{ background-image: url(../img/decor/ac-big.svg);}
+   &-xl:before{ background-image: url(../img/decor/ac-xl.svg);}
+   &-lg:before{ background-image: url(../img/decor/ac-lg.svg);}
+   &-xs:before{ background-image: url(../img/decor/ac-xs.svg);}
+}
+.intro {
+   min-height: 100vh;
+   padding: calc(12em + 4vh) 0;
+   background: url(../img/intro/bg.svg) center no-repeat;
+   background-size: cover;
+   // .title--accent {
+   //    background-image: url(../img/decor/ac-big-sm.svg);
+   // }
 }
