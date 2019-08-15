@@ -30,11 +30,11 @@ body {
 .text-center {text-align: center;}
 
 .title {
-
    font-size: calc(2vw + 2.1em);
    line-height: 1.12;
    color: $primary;
    max-width: 900px;
+   margin-bottom: .4em;
    @media (min-width: 2000px){
       font-size: em(72);
    }
@@ -61,7 +61,6 @@ body {
          background-repeat: no-repeat;
          background-size: contain;
          background-position: center
-         // background-image: url(../img/decor/ac-big-sm.svg);
       }
    }
 }
@@ -74,10 +73,29 @@ body {
    &-lg:before{ background-image: url(../img/decor/ac-lg.svg);}
    &-xs:before{ background-image: url(../img/decor/ac-xs.svg);}
 }
-
 .link {
    color: $purple;
    margin: 0 .1em;
+}
+.arrow {
+   display: inline-block;
+   width: 34px;
+   height: 54px;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   margin: 14px auto;
+   &--dark {
+      background-image: url(../img/decor/arrow-down-dark.png);
+   }
+   &--white {
+      background-image: url(../img/decor/arrow-down-white.png);
+   }
+}
+figure {
+   position: relative;
+   text-align: center;
+   flex-shrink: .2;
 }
 
 // viewportchechecker-animations

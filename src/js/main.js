@@ -19,6 +19,12 @@ $(document).ready(function () {
    }
 	sticky();
 
+	// scroll to place
+	$(".js-anchor").click(function() {
+      $("html, body").animate({scrollTop: $($(this).closest('section').next('section')).offset().top + 10 +"px"}, {duration: 800});
+      return false;
+    });
+
 	//parallax
 	// if (window.matchMedia('(min-width: 1025px)').matches) {
 	// 	skrollr.init({

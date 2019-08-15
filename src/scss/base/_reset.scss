@@ -28,7 +28,6 @@ html {
 }
 img {
 	max-width: 100%;
-	display: block;
 }
 section {
 	width: 100%;
@@ -46,9 +45,5 @@ a,a:focus {
 svg {max-width: 100%;}
 
 p {padding-bottom: 1.1em;}
-
-@media (min-width: 992px){
-	.ml-lg-auto {margin-left: auto;}
-}
 
 .cbalink {display: none;}
