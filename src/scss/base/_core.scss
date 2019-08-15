@@ -30,11 +30,14 @@ body {
 .text-center {text-align: center;}
 
 .title {
-   // font-size: em(72);
+
    font-size: calc(2vw + 2.1em);
    line-height: 1.12;
    color: $primary;
    max-width: 900px;
+   @media (min-width: 2000px){
+      font-size: em(72);
+   }
    &--white {
       color: #fff;
    }
@@ -73,7 +76,8 @@ body {
 }
 
 .link {
-	color: $purple;
+   color: $purple;
+   margin: 0 .1em;
 }
 
 // viewportchechecker-animations
