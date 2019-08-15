@@ -1,5 +1,37 @@
 .intro {
    min-height: 110vh;
+   padding: calc(12em + 4vh) 0;
    background: url(../img/intro/bg.svg) center no-repeat;
    background-size: cover
+}
+.title {
+   font-size: em(72);
+   line-height: 1.3;
+   color: $primary;
+   max-width: 900px;
+   &--white {
+      color: #fff;
+   }
+   &--center {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+   }
+   &--accent {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      &:before {
+         content: '';
+         z-index: -1;
+         position: absolute;
+         bottom: 0;
+         height: 90%;
+         left: 0.3em;
+         right: 0.3em;
+         background-repeat: no-repeat;
+         background-size: contain;
+         background-image: url(../img/decor/ac-big-sm.svg);
+      }
+   }
 }

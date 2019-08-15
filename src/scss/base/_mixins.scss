@@ -16,3 +16,12 @@ $body-font-size: 16; // body font-size
     width: .1px;
   }
 }
+
+//loop
+// @for $i from 1 through 9 {
+//   .some__item {
+//     &:nth-child(#{$i}) {
+//       animation-delay: $i * (1s / 18);
+//     }
+//   }
+// }
