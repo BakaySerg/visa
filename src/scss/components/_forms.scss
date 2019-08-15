@@ -23,6 +23,10 @@
 		box-shadow: 0 10px 40px rgba(44,1,98,.5);
 		color: #fff;
 	}
+	@media(max-width: 992px){
+		font-size:1.3em;
+		padding: 18px calc(1.4% + 15px);
+	}
 	@media(max-width: 380px){
 		margin: 10px auto 0;
 		max-width: 100%;
