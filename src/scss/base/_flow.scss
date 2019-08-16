@@ -1,22 +1,80 @@
 .intro {
-   min-height: 100vh;
+   min-height: 75vh;
    padding: calc(9.3em + 3.1vh) 0 0;
    margin-bottom: calc(9.3em + 3.1vh);
    background: url(../img/intro/bg.svg) center 108% no-repeat;
    background-size: cover;
+   @media (max-width: 1449px){
+      .container {
+         max-width: 1010px;
+      }
+   }
+   @media (max-width: 991px){
+      padding: calc(7em + 3.1vh) 0 0;
+   }
    &__scene {
-      padding: calc(2vh + 1em) 0;
+      padding: calc(2vh + 1.5em) 0;
+      flex-wrap: nowrap;
+   }
+   &__figure {
+      flex-basis: 40%;
+      max-width: 42%;
    }
    &__learn {
       color: #fff;
       text-align: center;
       max-width: 206px;
       align-self: center;
-      padding: 0 0 30px;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      line-height: 1.2;
+      padding: calc(4vh + 6px) 0 0;
       font-size: calc(.3vw + 1.11em);
+      margin-left: auto;
+      margin-right: auto;
       user-select: none;
    }
    &__dialog {
       position: absolute;
+      top: -1.6em;
+      left: -2.8em;
+      font-family: $ff;
+      font-size: calc(.6vw + 1.24em);
+      letter-spacing: -.02em;
+      line-height: 1.2;
+      text-align: left;
+      color: $primary2;
+      padding: 2em 3em 2em 2em;
+      @media (max-width: 840px){
+         top: -2.1em;
+         left: -4.1em;
+      }
+      &:before {
+         content: '';
+         position: absolute;
+         top: .3em;
+         left: .4em;
+         width: 116%;
+         height: 96%;
+         background: url(../img/intro/dialog.svg) center no-repeat;
+         background-size: contain;
+         z-index: -1;
+         @media (max-width: 991px){
+            width: 108%;
+            height: 90%;
+            left: .6em;
+            top: 0.4em;
+         }
+      }
    }
+}
+.intro .decor {
+   width: 90%;
+   left: 10%;
+   bottom: -3vh;
+}
+.decor__el-intro-1 {
+   left: 0;
 }

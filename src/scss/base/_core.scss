@@ -85,6 +85,10 @@ body {
    background-position: center;
    background-size: contain;
    margin: 14px auto;
+   @media (max-width: 991px){
+      width: 32px;
+      height: 44px;
+   }
    &--dark {
       background-image: url(../img/decor/arrow-down-dark.png);
    }
@@ -95,7 +99,14 @@ body {
 figure {
    position: relative;
    text-align: center;
-   flex-shrink: .2;
+}
+.decor {
+   position: absolute;
+   pointer-events: none;
+   z-index: 1;
+   &__el {
+      position: absolute;
+   }
 }
 
 // viewportchechecker-animations
