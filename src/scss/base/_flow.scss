@@ -89,3 +89,46 @@
 	height: calc(11vw + 8em);
    background-image: url(../img/intro/el-2.svg);
 }
+//Previosly
+.previously {
+   padding: 0 0 2.4em;
+   background: url(../img/previously/bg.svg) 20% bottom no-repeat;
+   background-size: cover;
+   &__figure {
+      position: relative;
+      padding: calc(8.8vw + 6em) calc(16vw + 6.8em) calc(4vw + 3.3em) 20px;
+      img {
+         position: relative;
+      }
+   }
+   &__dialog {
+      position: absolute;
+      top: 5.6%;
+      right: 12%;
+      width:calc(90% + 4.9em);
+      height: calc(91% + 4.21em);
+      background: url(../img/previously/bg-fugure.svg) center no-repeat;
+      background-size: contain;
+      @media (max-width: 840px){
+         position: absolute;
+         top: -3.4%;
+         right: 1%;
+         width: calc(108% + 4.9em);
+         height: calc(96% + 4.21em);
+      }
+      p {
+         position: absolute;
+         top: calc(12% + 1em);
+         right: calc(6.9% - .8em);
+         font-family: $ff;
+         font-size: calc(.4vw + 1.38em);
+         line-height: 1.25;
+         text-align: left;
+         color: #fff;
+         @media (max-width: 720px){
+            top: calc(10% + 1em);
+            right: 1.1%;
+         }
+      }
+   }
+}
