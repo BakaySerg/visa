@@ -71,10 +71,21 @@
    }
 }
 .intro .decor {
-   width: 90%;
-   left: 10%;
+   width: 92%;
+   left: 4%;
    bottom: -3vh;
 }
 .decor__el-intro-1 {
-   left: 0;
+   left: 3%;
+   bottom: 0;
+   width: calc(4.5vw + 4em);
+	height: calc(4.5vw + 4em);
+   background-image: url(../img/intro/el-1.svg);
+}
+.decor__el-intro-2 {
+   right: 0;
+   bottom: 0;
+   width: calc(10vw + 8em);
+	height: calc(11vw + 8em);
+   background-image: url(../img/intro/el-2.svg);
 }
