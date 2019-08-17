@@ -287,14 +287,99 @@
    background-image: url(../img/decor/circle-1.svg);
    width: calc(2vw + 1.98em);
    height: calc(2vw + 1.98em);
-   bottom: -3vh;
-   left: 8%;
+   bottom: -11vh;
+   left: calc(6vw + 8%);
 }
 .decor__el-fed-2 {
    background-image: url(../img/fed/el-1.svg);
-   width: calc(5vw + 5em);
-   height: calc(5vw + 5em);
-   bottom: 4vh;
-   right: 1%;
+   width: calc(13vw + 8em);
+   height: calc(13.1vw + 8.1em);
+   bottom: -10em;
+   right: 3%;
 }
-.decor__el-fed-3 {}
+.decor__el-fed-3 {
+   background-image: url(../img/decor/circle-1.svg);
+   width: calc(3.03vw + 2em);
+   height: calc(3.03vw + 2em);
+   bottom: 10em;
+   right: 18%;
+}
+
+.fearfully {
+   padding: 3em 0;
+   .title--accent {
+      padding: 0 .3em 0.452em;
+   }
+   &__figure {
+      background: url(../img/fearfully/bg-figure.svg) right 12% no-repeat;
+      background-size: contain;
+      margin: auto;
+      padding-top: calc(2vh + 1em);
+      padding: calc(2vh + 1em) calc(3vw + 4em) 0;
+      max-width: 900px;
+   }
+   &__blog{}
+}
+
+.withus {
+   background: url(../img/withus/bg.svg) center no-repeat;
+   background-size: contain;
+   padding: 5em 0 3em;
+   margin: 2vh 0;
+   @media (max-width: 1609px) {
+      background-size: auto 100%;
+   }
+   .title--accent {
+      padding: 0 .3em 0.32em;
+   }
+   &__row {padding-top: 2em;}
+   &__item {
+      text-align: center;
+      position: relative;
+      &:nth-child(1) .withus__icon {background-image: url(../img/withus/date.png)}
+      &:nth-child(2) .withus__icon {background-image: url(../img/withus/money.png)}
+      &:nth-child(3) .withus__icon {background-image: url(../img/withus/pig.png)}
+      & > p, & > div {
+         color: $title;
+         font-size: em(18);
+         font-weight: 700;
+         display: inline-block;
+         max-width: 230px;
+      }
+      @media (min-width: 768px) {
+         &:not(:last-child):after {
+            content: '';
+            display: inline-block;
+            width: 34px;
+            height: 56px;
+            position: absolute;
+            right: -20px;
+            top: calc(29% - 25px);
+            background: url(../img/decor/arrow-down-dark.png) center no-repeat;
+            background-size: contain;
+         }
+         &:nth-child(odd):after {
+            transform: rotate(-90deg);
+         }
+         &:nth-child(even):after {
+            transform: rotate(-90deg) scaleX(-1);
+         } 
+      }
+   }
+   &__icon {
+      display: block;
+      margin: 0 auto 2em;
+      width: 132px;
+      height: 106px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+   }
+   &__remark {
+      font-size: 11px;
+      color: #79a4b5;
+      max-width: 563px;
+      margin: calc(3vh + 10px) auto;
+   }
+
+}
