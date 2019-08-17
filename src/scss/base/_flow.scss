@@ -80,7 +80,7 @@
    bottom: 0;
    width: calc(4.5vw + 4em);
 	height: calc(4.5vw + 4em);
-   background-image: url(../img/intro/el-1.svg);
+   background-image: url(../img/decor/circle-1.svg);
 }
 .decor__el-intro-2 {
    right: 0;
@@ -118,17 +118,68 @@
       }
       p {
          position: absolute;
-         top: calc(12% + 1em);
-         right: calc(6.9% - .8em);
+         top: calc(4.2% + 1em);
+         right: -.8em;
          font-family: $ff;
          font-size: calc(.4vw + 1.38em);
+         padding: 2.3em 2.3em 2.3em 6.7em;
          line-height: 1.25;
          text-align: left;
          color: #fff;
-         @media (max-width: 720px){
-            top: calc(10% + 1em);
-            right: 1.1%;
+         background: url(../img/previously/dialog.svg) center no-repeat;
+         background-size: contain;
+         @media (max-width: 800px){
+            padding: 1.8em 2.7em 1.8em 6.2em;
+            right: -2em;
          }
       }
    }
+   .decor {
+      top: calc(14% + 6em);
+      width: 94%;
+      left: 3%;
+      bottom: -3vh;
+   }
+}
+.decor__el-previously-1 {
+   background-image: url(../img/previously/el-1.svg);
+   top: 0;
+   left: 0;
+   width: calc(11.2vw + 9.1em);
+	height: calc(10.9vw + 6.9em);
+}
+.decor__el-previously-2 {
+   background-image: url(../img/decor/circle-3.svg);
+   width: calc(1vw + 2.6em);
+	height: calc(1vw + 2.6em);
+   top: 1%;
+   left: 11%;
+}
+.decor__el-previously-3 {
+   background-image: url(../img/previously/el-2.svg);
+   bottom: -4vh;
+   right: -4vw;
+   width: calc(11.2vw + 9.1em);
+	height: calc(10.9vw + 6.9em);
+}
+.decor__el-previously-4 {
+   background-image: url(../img/decor/circle-1.svg);
+   width: calc(1.2vw + 2.94em);
+	height: calc(1.2vw + 2.94em);
+   bottom: 1%;
+   left: 5%;
+}
+.decor__el-previously-5 {
+   background-image: url(../img/decor/circle-2.svg);
+   width: calc(1.2vw + 2.94em);
+	height: calc(1.2vw + 2.94em);
+   bottom: 4vh;
+   right: -4vw;
+}
+.decor__el-previously-6 {
+   background-image: url(../img/decor/circle-2.svg);
+   width: calc(1.2vw + 2.94em);
+	height: calc(1.2vw + 2.94em);
+   bottom: -1vh;
+   right: -3vw;
 }

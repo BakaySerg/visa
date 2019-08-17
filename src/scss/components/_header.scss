@@ -3,10 +3,15 @@
    left: 0;
    right: 0;
    background-color: $purple;
-   transition: .3s;
+   box-shadow: 0 5px 10px rgba(98, 58, 146, 0.3);
    position: fixed;
    z-index: 99;
-   padding: 6px 0;
+   padding: 9px 0;
+   transform: translateY(-100%);
+   transition: .6s;
+   // &.slideInDown {
+   //    transform: translateY(0%);
+   // }
    .container {
       display: flex;
       flex-wrap: wrap;
@@ -38,3 +43,4 @@
    transition: .3s;
    &:hover {opacity: 0.8;}
 }
+.header__phone--sm {font-size: calc(.4vw + 1.022em);}

@@ -31,7 +31,7 @@ $(document).ready(function () {
 
 	// scroll to place
 	$(".js-anchor").click(function() {
-      $("html, body").animate({scrollTop: $($(this).closest('section').next('section')).offset().top + 10 +"px"}, {duration: 800});
+      $("html, body").animate({scrollTop: $($(this).closest('section').next('section')).offset().top - 30 +"px"}, {duration: 800});
       return false;
     });
 

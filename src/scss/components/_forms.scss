@@ -32,6 +32,11 @@
 		max-width: 100%;
 	}
 }
+.btn--sm {
+	font-size: 1.1em;
+	padding: 17px calc(2.2% + 20px);
+	border-radius: 15px;
+}
 .remark {
 	text-align: center;
 	font-size: 1.08em;
