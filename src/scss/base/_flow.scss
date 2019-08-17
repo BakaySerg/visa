@@ -1,5 +1,5 @@
 .intro {
-   min-height: 75vh;
+   min-height: 55vh;
    padding: calc(9.3em + 3.1vh) 0 0;
    margin-bottom: calc(9.3em + 3.1vh);
    background: url(../img/intro/bg.svg) center 108% no-repeat;
@@ -11,6 +11,10 @@
    }
    @media (max-width: 991px){
       padding: calc(7em + 3.1vh) 0 0;
+   }
+   @media (max-width: 720px) {
+      background-size: 170% auto;
+      background-position: center top;
    }
    &__scene {
       padding: calc(2vh + 1.5em) 0;
@@ -92,7 +96,7 @@
 //Previosly
 .previously {
    padding: 0 0 2.4em;
-   background: url(../img/previously/bg.svg) 20% bottom no-repeat;
+   background: url(../img/previously/bg.svg) 20% 98% no-repeat;
    background-size: cover;
    &__figure {
       position: relative;
@@ -157,10 +161,10 @@
 }
 .decor__el-previously-3 {
    background-image: url(../img/previously/el-2.svg);
-   bottom: -4vh;
-   right: -4vw;
-   width: calc(11.2vw + 9.1em);
-	height: calc(10.9vw + 6.9em);
+   bottom: -15vh;
+   right: 4vw;
+   width: calc(17.3vw + 10.4em);
+   height: calc(20.5vw + 10.7em);
 }
 .decor__el-previously-4 {
    background-image: url(../img/decor/circle-1.svg);
@@ -171,15 +175,126 @@
 }
 .decor__el-previously-5 {
    background-image: url(../img/decor/circle-2.svg);
-   width: calc(1.2vw + 2.94em);
-	height: calc(1.2vw + 2.94em);
-   bottom: 4vh;
-   right: -4vw;
+   width: calc(2.2vw + 2.6em);
+	height: calc(2.2vw + 2.6em);
+   bottom: 38%;
+   right: 22%;
 }
 .decor__el-previously-6 {
    background-image: url(../img/decor/circle-2.svg);
-   width: calc(1.2vw + 2.94em);
-	height: calc(1.2vw + 2.94em);
-   bottom: -1vh;
-   right: -3vw;
+   width: calc(1.12vw + 1.8em);
+	height: calc(1.12vw + 1.8em);
+   bottom: -9vh;
+   right: 7%;
 }
+
+//
+.blueness-wrap {
+   position: relative;
+   display: -ms-flexbox;
+   display: flex;
+   justify-content: center;
+   padding: 0 15px;
+   margin-top: -10vh;
+} 
+.blueness {   
+   display: -ms-flexbox;
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: center;
+   padding: calc(4.5vw + 4.7em) calc(3.8vw + 3em) calc(1vw + 2em);
+   background: url(../img/blueness/bg-figure.svg) left center no-repeat;
+   background-size: contain;
+   @media (max-width: 800px) {
+      padding: calc(4.2vw + 4.6em) calc(2.6vw + 2em) calc(1vw + .9em);
+   }
+}
+.big-text {
+   color: #fff;
+   font-size: calc(.7vw + 1.66em);
+   font-weight: 900;
+   line-height: 1.25;
+   text-align: center;
+   @media (max-width: 767px) {
+      font-size: calc(.6vw + 1.4em);
+      font-weight: 700;
+   }
+}
+.blueness-wrap .decor {
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+.decor__el-blueness-1{
+   background-image: url(../img/decor/circle-3.svg);
+   width: calc(5.13vw + 5.1em);
+   height: calc(5.13vw + 5.1em);
+   bottom: -3%;
+   left: 12%;
+}
+.fed {
+   padding: calc(4vh + 1.6em) 0;
+   background: url(../img/fed/bg.svg) center 90% no-repeat;
+   background-size: contain;
+   .title--accent {
+      padding: 0 .2em 0.452em;
+   }
+   &__figure {
+      background: url(../img/fed/bg-figure.svg) right 12% no-repeat;
+      background-size: contain;
+      margin: auto;
+      padding-top: calc(2vh + 1em);
+      padding: calc(2vh + 1em) calc(3vw + 4em) 0;
+      max-width: 900px;
+      @media (max-width: 720px) {
+         padding: calc(2vh + 2.1em) calc(10.3vw + 4em) 0;
+      }
+   }
+   &__blob{
+      padding: calc(2.1vw + 2.2em) calc(3.8vw + 2em) calc(2vw + 2em);
+      margin: calc(6.1vh + 4em) auto calc(1.1vh + 1em);
+      max-width: 818px;
+      background: url(../img/fed/not-fact.svg) left center no-repeat;
+      background-size: contain;
+      h3 {
+         font-weight: inherit;
+         font-size: 1.7em;
+         margin-bottom: .1em;
+         letter-spacing: .02em;
+      }
+   }
+   &__remark{
+      font-size: calc(.5vw + 1.3em);
+      font-weight: 500;
+      line-height: 1.55;
+      text-align: center;
+      color: $title;
+      max-width: 974px;
+      margin: 0 auto;
+      @media (max-width: 800px) {
+         font-size: calc(.4vw + 1em);
+      }
+   }
+   .decor {
+      top: 50%;
+      left: 4%;
+      width: 92%;
+   }
+}
+.decor__el-fed-1 {
+   background-image: url(../img/decor/circle-1.svg);
+   width: calc(2vw + 1.98em);
+   height: calc(2vw + 1.98em);
+   bottom: -3vh;
+   left: 8%;
+}
+.decor__el-fed-2 {
+   background-image: url(../img/fed/el-1.svg);
+   width: calc(5vw + 5em);
+   height: calc(5vw + 5em);
+   bottom: 4vh;
+   right: 1%;
+}
+.decor__el-fed-3 {}

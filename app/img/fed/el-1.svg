@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="377" height="381" viewBox="0 0 377 381"><defs><clipPath id="wukga"><path fill="#fff" d="M247 121c71.797 0 130 58.203 130 130s-58.203 130-130 130-130-58.203-130-130 58.203-130 130-130z"/></clipPath></defs><g><g><path fill="#8edbf9" d="M186 0c82.843 0 150 67.157 150 150s-67.157 150-150 150S36 232.843 36 150 103.157 0 186 0z"/></g><g><path fill="#efe1ff" d="M247 121c71.797 0 130 58.203 130 130s-58.203 130-130 130-130-58.203-130-130 58.203-130 130-130z"/><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2" d="M247 121c71.797 0 130 58.203 130 130s-58.203 130-130 130-130-58.203-130-130 58.203-130 130-130z" clip-path="url(&quot;#wukga&quot;)"/></g><g><path fill="#905dcf" d="M45 19c24.853 0 45 20.147 45 45s-20.147 45-45 45S0 88.853 0 64s20.147-45 45-45z"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="377" height="381" viewBox="0 0 377 381"><defs><clipPath id="wukga"><path fill="#fff" d="M247 121c71.797 0 130 58.203 130 130s-58.203 130-130 130-130-58.203-130-130 58.203-130 130-130z"/></clipPath></defs>
+<g>
+	<g><path fill="#8edbf9" d="M186 0c82.843 0 150 67.157 150 150s-67.157 150-150 150S36 232.843 36 150 103.157 0 186 0z"/></g>
+	<g><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="2" d="M247 121c71.797 0 130 58.203 130 130s-58.203 130-130 130-130-58.203-130-130 58.203-130 130-130z" clip-path="url(&quot;#wukga&quot;)"/></g>
+</g>
+</svg>
