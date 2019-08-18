@@ -477,3 +477,15 @@
       &:last-child:before {background-image: url(../img/decor/marker-accent.svg)}
    }
 }
+.form {
+   background-color: #fff;
+   border-radius: 15px;
+   max-width: 970px;
+   margin: auto;
+   padding: 2em calc(3vh + 2.2em);
+   &-sec {
+      padding: calc(4em + 4vh) 0;
+      background: url(../img/form/bg.svg) center no-repeat;
+      background-size: contain;
+   }
+}

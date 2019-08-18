@@ -4,11 +4,10 @@ $(document).ready(function () {
 	$("img, a").on("dragstart", function(e) {e.preventDefault();});
 
 	//top-show
-	function sticky(){
+	function showHeader(){
       $(window).scroll(function() {
         var hedHeight = $(".top").height();
         var winTop = $(window).scrollTop();
-      //   $('.navbar-collapse').collapse('hide');
 
           if(winTop >= hedHeight + 40){
            $("#top-fixed").addClass("slideInDown");
@@ -17,7 +16,7 @@ $(document).ready(function () {
          }
       });
    }
-	sticky();
+	showHeader();
 
 	// scroll to place
 	$(".js-anchor").click(function() {
@@ -34,44 +33,47 @@ $(document).ready(function () {
 	// 	});
 	// };
 
-	// Scroll-anim (only desktop)
-	var ww = $(window).width();
 
-	if ( ww > 1023) {
-		$('.anim-x,.anim--x,.anim-y').addClass("anim-wait").viewportChecker({
-			classToAdd: 'anim-play',
-			offset: 140
-		});
-	};
+	//mask
+	$("[type=tel]").mask("+7 (999) 999-99-99");
 
-	// $('.scroll-top').click(function(){
-	// 	$("html, body").stop().animate({scrollTop: 0}, {duration: 800});
-	// 	return false;
-	// });
-
+	//Дата
+	flatpickr("[name=date]",{
+	  dateFormat: "d-M-Y",
+	  // mode: "multiple",
+	  mode: "range",
+	  // -- выходные --
+	  // "disable": [
+	  //     function(date) {
+	  //       var i
+	  //         return (date.getDay() === 6 || date.getDay() === 0);
+	  //     }
+	  // ],
+	  "locale": {"firstDayOfWeek": 1 }
+	});
 
 	// submit
-	var form = document.forms['feedback'];
+	// var form = document.forms['feedback'];
 
-	$(form).on('submit', function (e) {
-      e.preventDefault();
-      $.ajax({
-        type: 'POST',
-        url: 'mail.php',
-        data: $(this).serialize(),
-        success: function(){
-			 $.magnificPopup.open({items: {src: '#popup-success'},type: 'inline',mainClass: 'mfp-fade'},0);
-			 setTimeout(function(){$.magnificPopup.close()},4200);
-        },
-        error: function() {
-			 $.magnificPopup.open({items: {src: '#popup-error'},type: 'inline',mainClass: 'mfp-fade'},0);
-			 setTimeout(function(){$.magnificPopup.close()},4200);
-        }
-      }).done(function() {
-        $(form).trigger("reset");
-      });
-      return false;
-   });
+	// $(form).on('submit', function (e) {
+ //      e.preventDefault();
+ //      $.ajax({
+ //        type: 'POST',
+ //        url: 'mail.php',
+ //        data: $(this).serialize(),
+ //        success: function(){
+	// 		 $.magnificPopup.open({items: {src: '#popup-success'},type: 'inline',mainClass: 'mfp-fade'},0);
+	// 		 setTimeout(function(){$.magnificPopup.close()},4200);
+ //        },
+ //        error: function() {
+	// 		 $.magnificPopup.open({items: {src: '#popup-error'},type: 'inline',mainClass: 'mfp-fade'},0);
+	// 		 setTimeout(function(){$.magnificPopup.close()},4200);
+ //        }
+ //      }).done(function() {
+ //        $(form).trigger("reset");
+ //      });
+ //      return false;
+ //   });
 
 });
 

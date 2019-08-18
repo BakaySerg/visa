@@ -6,8 +6,6 @@
 </head>
 
 <body class="initial">
-	<!-- svg-sprite -->
-	//= ./include/_svg-sprite.html
 
 	<!-- header -->
 	//= ./include/_header.html
@@ -157,7 +155,59 @@
 		</div>
 
 		<!-- form-sec -->
-		<section class="form-sec"></section>
+		<section class="form-sec">
+			<form action="#" class="form">
+				<h3 class="form__title">Оформить заявку</h3>
+				<div class="form__wrap">
+					<label class="order-first">
+						<span>Имя</span>
+						<input type="text" name="name" placeholder="Ваше имя" minlength="2">						
+					</label>
+					<label class="order-md-3">
+						<span>Телефон</span>
+						<input type="tel" name="tel" placeholder="+ 7 (...) ... - .. - .." required>
+					</label>
+					<div class="order-md-2 label">
+						<span>Страна</span>
+						<select name="country">
+							<option value="0" selected style="display: none">Выберите страну</option>
+							<option value="">Австралия</option>
+							<option value="">Германия</option>
+							<option value="">Германия</option>
+							<option value="">Германия</option>
+							<option value="">Германия</option>
+						</select>
+					</div>
+					<label class="order-md-4">
+						<span>Даты поездки</span>
+						<input type="date" name="date">						
+					</label>
+				</div>
+				<div class="form__options">
+					<div class="form__code label">
+						<input type="text" pattern="[0-9]{4}">
+						<button type="button" class="btn btn--xs" disabled>Подтвердить телефон</button>
+					</div>
+					<div class="form__people">
+						<div class="label">
+							<span>Кол-во взрослых</span>
+							<select name="adults">
+								<option value="">2</option>
+								<option value="">3</option>
+							</select>
+						</div>
+						<div class="label">
+							<span>Кол-во детей до 18 лет</span>
+							<select name="childs">
+								<option value="">0</option>
+								<option value="">1</option>
+								<option value="">2</option>
+							</select>
+						</div>
+					</div>				
+				</div>
+			</form>
+		</section>
 
 		<!-- aright -->
 		<section class="aright"></section>
