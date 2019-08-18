@@ -209,6 +209,10 @@
    @media (max-width: 800px) {
       padding: calc(4.2vw + 4.6em) calc(2.6vw + 2em) calc(1vw + .9em);
    }
+   @media (max-width: 600px) {
+      padding: calc(4vw + 4em) calc(2.3vw + 1em) calc(1.4vw + 1.1em);
+      p {padding-bottom: .7em;}
+   }
 }
 .big-text {
    color: #fff;
@@ -219,6 +223,9 @@
    @media (max-width: 767px) {
       font-size: calc(.6vw + 1.4em);
       font-weight: 700;
+   }
+   @media (max-width: 500px) {
+      font-size: calc(.5vw + 1.1em)
    }
 }
 .blueness-wrap .decor {
@@ -311,14 +318,53 @@
       padding: 0 .3em 0.452em;
    }
    &__figure {
-      background: url(../img/fearfully/bg-figure.svg) right 12% no-repeat;
+      background: url(../img/fearfully/bg-figure.svg) center 7% no-repeat;
       background-size: contain;
       margin: auto;
-      padding-top: calc(2vh + 1em);
-      padding: calc(2vh + 1em) calc(3vw + 4em) 0;
+      padding: calc(4vh + 1.6em) calc(3vw + 4em) 0;
+      margin-bottom: calc(-12vw - 3em);
       max-width: 900px;
+      @media (max-width: 800px) {
+         padding: calc(4vh + 1.6em) calc(15vw + 4em) 0;
+      }
    }
-   &__blog{}
+   &__blob{
+      background: url(../img/fearfully/bg-blob.svg) 55% 2% no-repeat;
+      background-size: contain;
+      padding: calc(14vw + 4.4em) calc(5.4vw + 2.8em) calc(2vw + 1.5em);      
+   }
+   & .big-text {
+      @media (min-width: 1600px) {
+         font-size: calc(1vw + 1.8em);
+      }
+      p:last-of-type{padding-bottom: .8em;}
+   }   
+   .decor {
+      top: 30%;
+      width: 90%;
+      left: 5%;
+   }
+}
+.decor__el-fearfully-1 {
+   background-image: url(../img/decor/circle-2.svg);
+   width: calc(3.8vw + 2.1em);
+   height: calc(3.8vw + 2.1em);
+   top: 0;
+   left: 7%;
+}
+.decor__el-fearfully-2 {
+   background-image: url(../img/fearfully/el-2.svg);
+   right: 0;
+   top: -9vh;
+   width: calc(17.3vw + 9em);
+   height: calc(20.5vw + 9em);
+}
+.decor__el-fearfully-3 {
+   background-image: url(../img/decor/circle-2.svg);
+   width: calc(3.8vw + 2.1em);
+   height: calc(3.8vw + 2.1em);
+   top: -10vh;
+   right: -2%;
 }
 
 .withus {
@@ -381,5 +427,53 @@
       max-width: 563px;
       margin: calc(3vh + 10px) auto;
    }
+}
 
+.steps {
+   padding: calc(1.6em + 1.8vw) 0;
+   display: -ms-flexbox;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   list-style: none;
+   counter-reset: step;
+   li {
+      min-width: 24.8%;
+      flex-grow: .2;
+      color: $title;
+      font-size: em(18);
+      font-weight: 700;
+      white-space: nowrap;
+      padding-right: .6em;
+      padding-left: .4em;
+      margin: 0 0 calc(4vh + 2em);
+      @media (max-width: 1200px) {
+         min-width: 33.3%;
+      }
+      @media (max-width: 900px) {
+         min-width: 50%;
+         padding-left: 1em;
+         padding-right: 0;
+      }
+      @media (max-width: 600px) {
+         flex: 1 0 100%;
+         margin: 0 0 calc(2vh + .3em);
+      }
+      &:before {
+         counter-increment:step;
+         content: counter(step);
+         display: inline-block;
+         font-size: 24px;
+         font-family: $ff;
+         font-weight: normal;
+         padding: .63em;
+         line-height: 1;
+         color: #fff;
+         background: url(../img/decor/marker.svg) center no-repeat;
+         background-size: contain;
+         margin-right: .34em;
+      }
+      &:last-child:before {background-image: url(../img/decor/marker-accent.svg)}
+   }
 }
