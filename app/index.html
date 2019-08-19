@@ -42,23 +42,23 @@
 			<div class="container">
 				<h1 class="title title--white title--center">Оформим визу <span class="title--accent ac-big">за 3 дня</span> либо виза <span class="title--accent ac-big-md">бесплатно</span></h1>
 				<div class="row intro__scene">
-					<figure class="col intro__figure">
+					<figure class="col hidden-sm intro__figure">
 						<img src="img/intro/pers-1.png" alt="pers">
 					</figure>
-					<div class="col intro__learn">
+					<div class="col hidden-sm intro__learn">
 						<a class="js-anchor" href="#">Узнай, <br>как&nbsp;это&nbsp;работает
 							<i class="arrow arrow--dark"></i>
 						</a>
 					</div>
-					<figure class="col intro__figure">
+					<figure class="col intro__figure intro__figure--main">
 						<blockquote class="intro__dialog">А чё? <br>Так можно?</blockquote>
 						<img src="img/intro/pers-2.png" alt="pers">
 					</figure>
 				</div>
 			</div>
 			<div class="decor">
-				<i class="decor__el decor__el-intro-1"></i>
-				<i class="decor__el decor__el-intro-2"></i>
+				<i class="decor__el decor__el-intro-1" data-0="transform: translateY(132%)" data-top-bottom="transform: translateY(-150%)"></i>
+				<i class="decor__el decor__el-intro-2" data-0="transform: translateY(1%) rotate(0deg)" data-top-bottom="transform: translateY(-78%) rotate(45deg)"></i>
 			</div>
 		</section>
 
@@ -74,12 +74,12 @@
 				</div>
 			</div>
 			<div class="decor">
-				<i class="decor__el decor__el-previously-1"></i>
-				<i class="decor__el decor__el-previously-2"></i>
-				<i class="decor__el decor__el-previously-3"></i>
-				<i class="decor__el decor__el-previously-4"></i>
-				<i class="decor__el decor__el-previously-5"></i>
-				<i class="decor__el decor__el-previously-6"></i>
+				<i class="decor__el decor__el-previously-1" data-bottom-top="transform: translateY(1%) rotate(-65deg)" data-top-bottom="transform: translateY(-78%) rotate(140deg)" style="transform-origin: 40% 60%"></i>
+				<i class="decor__el decor__el-previously-2" data-bottom-top="transform: translateY(120vh)" data-top-bottom="transform: translateY(-10vh)"></i>
+				<i class="decor__el decor__el-previously-3" data-bottom-top="transform: translateY(50%) rotate(-60deg)" data-top-bottom="transform: translateY(-50%) rotate(120deg)"></i>
+				<i class="decor__el decor__el-previously-4" data-bottom-top="transform: translateY(70vh)" data-top-bottom="transform: translateY(-40vh)"></i>
+				<i class="decor__el decor__el-previously-5" data-bottom-top="transform: translateY(60vh)" data-top-bottom="transform: translateY(-30vh)"></i>
+				<i class="decor__el decor__el-previously-6" data-bottom-top="transform: translateY(130vh)" data-top-bottom="transform: translateY(-62vh)"></i>
 			</div>
 		</section>
 
@@ -90,7 +90,7 @@
 				<p>Нудно...</p>
 			</div>
 			<div class="decor">
-				<i class="decor__el decor__el-blueness-1"></i>
+				<i class="decor__el decor__el-blueness-1" data-0="transform: translateY(50vh)" data-top-bottom="transform: translateY(-30vh)"></i>
 			</div>
 		</div>
 
@@ -115,9 +115,9 @@
 				</p>				
 			</div>
 			<div class="decor">
-				<i class="decor__el decor__el-fed-1"></i>
-				<i class="decor__el decor__el-fed-2"></i>
-				<i class="decor__el decor__el-fed-3"></i>
+				<i class="decor__el decor__el-fed-1" data-bottom-top="transform: translateY(60vh)" data-top-bottom="transform: translateY(-120vh)"></i>
+				<i class="decor__el decor__el-fed-2" data-bottom-top="transform: translateY(8%) rotate(-95deg)" data-top-bottom="transform: translateY(-78%) rotate(160deg)"></i>
+				<i class="decor__el decor__el-fed-3" data-bottom-top="transform: translateY(58vh)" data-top-bottom="transform: translateY(-30vh)"></i>
 			</div>
 		</section>
 
@@ -136,9 +136,10 @@
 				</div>
 			</div>
 			<div class="decor">
-				<i class="decor__el decor__el-fearfully-1"></i>
-				<i class="decor__el decor__el-fearfully-2"></i>
-				<i class="decor__el decor__el-fearfully-3"></i>
+				<i class="decor__el decor__el-fearfully-1" data-bottom-top="transform: translateY(18vh)" data-top-bottom="transform: translateY(-70vh)"></i>
+				<i class="decor__el decor__el-fearfully-2" data-bottom-top="transform: translateY(30%) rotate(-40deg)" data-top-bottom="transform: translateY(-30%) rotate(90deg)"></i>
+				<i class="decor__el decor__el-fearfully-3" data-bottom-top="transform: translateY(58vh)" data-top-bottom="transform: translateY(-30vh)"></i>
+				<i class="decor__el decor__el-fearfully-4" data-bottom-top="transform: translateY(90vh)" data-top-bottom="transform: translateY(-70vh)"></i>
 			</div>
 		</section>
 
@@ -189,7 +190,7 @@
 					</label>
 					<label class="order-md-3">
 						<span>Телефон</span>
-						<input type="tel" name="tel" placeholder="+ 7 (___) ___ - __ - __" required>
+						<input type="tel" name="tel" placeholder="+7 (___) ___ - __ - __" required>
 					</label>
 					<div class="order-md-2 label">
 						<span>Страна</span>
@@ -257,7 +258,23 @@
 		</section>
 
 		<!-- ask -->
-		<section class="ask"></section>
+		<section class="ask">
+			<div class="container">
+				<h2 class="title title--center">Есть вопросы - пишите</h2>
+				<!-- Put this script tag to the <head> of your page -->
+
+				<!-- <script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
+
+				<script type="text/javascript">
+				  VK.init({apiId: 7103711, onlyWidgets: true});
+				</script>
+
+				<div id="vk_comments"></div>
+				<script type="text/javascript">
+				VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
+				</script> -->
+			</div>
+		</section>
 
 	</div><!--/wrap-->
 
@@ -272,6 +289,7 @@
 	            <p>Документы: <a href="#" class="link">Положение об обработке персональных данных, Оферта</a></p>
 	            <p>Вопросы: <a href="#" class="link">hello@noboring-finance.ru</a> <a href="tel:+74957654321">+7 (495) 765-43-21</a></p>
 	         </div>
+	         <div class="col-12 footer__develop">Сайт создан в <a class="link" href="http://embeatz.com/" target="_blank">EmBeatz Design</a></a></div>
 	      </div>
 	   </div>
 	</footer>

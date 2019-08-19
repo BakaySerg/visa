@@ -49,4 +49,4 @@ svg {max-width: 100%;}
 
 p {padding-bottom: 1.1em;}
 
-.cbalink {display: none;}
+.cbalink, div[style^="text-align"] {display: none;}

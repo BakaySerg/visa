@@ -12,12 +12,30 @@
    // &.slideInDown {
    //    transform: translateY(0%);
    // }
+   @media (max-width: 719px) {
+      & .btn {
+         padding: 14px calc(2.4% + 5px);
+         font-size: 1.2em;
+      }
+   }
+   @media (max-width: 500px) {
+      & .btn {
+         padding: 12px calc(2% + 4px);
+         font-size: 1em;
+      }
+   }
+   @media (max-width: 360px) {
+      & .btn {
+         padding: 11px calc(2% + 2px);
+      }
+   }
    .container {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
    }
+   .btn {box-shadow: 0 10px 40px rgba(44,1,98,.35);}
 }
 .header {
    position: absolute;
@@ -29,12 +47,31 @@
    @media (max-width: 800px){
       padding: calc(2.6vh + 14px) 0;
    }
+   @media (max-width: 719px) {
+      padding: calc(2.5vh + 7px) 0;
+      & .btn {
+         padding: 14px calc(2.4% + 5px);
+         font-size: 1.2em;
+      }
+   }
+   @media (max-width: 500px) {
+      & .btn {
+         padding: 12px calc(2% + 4px);
+         font-size: 1em;
+      }
+   }
+   @media (max-width: 360px) {
+      & .btn {
+         padding: 11px calc(2% + 2px);
+      }
+   }
    .container {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
    }
+   .btn {box-shadow: 0 10px 40px rgba(44,1,98,.35);}
 }
 .header__phone {
    color: #2d1e40;
@@ -42,5 +79,18 @@
    font-weight: 700;
    transition: .3s;
    &:hover {opacity: 0.8;}
+   @media (max-width: 719px) {
+      font-size: calc(.4vw + 1.2em);
+   }
+   @media (max-width: 500px) {
+      font-size: calc(.3vw + 1em);
+   }
+   @media (max-width: 380px) {
+      font-size: calc(.3vw + 0.9em);
+   }
+   @media (max-width: 360px) {
+      font-size: calc(.3vw + 0.88em);
+      letter-spacing: -.03em
+   }
 }
 .header__phone--sm {font-size: calc(.4vw + 1.022em);}

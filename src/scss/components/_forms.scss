@@ -6,8 +6,8 @@
 	text-align: center;
 	white-space: nowrap;
 	background-color: $accent3;
-	color: $primary;
-	box-shadow: 0 10px 40px rgba(44,1,98,.35);
+	color: $primary;	
+	box-shadow: 0 10px 40px rgba(255, 205, 52, 0.35);
 	border-radius: 25px;
 	padding: 23px calc(1.4% + 23px);
 	font-size: 1.4em;
@@ -20,8 +20,14 @@
 	cursor: pointer;
 	&:hover {
 		background-color: #ff7c34;
-		box-shadow: 0 10px 40px rgba(44,1,98,.5);
+		box-shadow: 0 5px 20px rgba(44,1,98,.3);
 		color: #fff;
+	}
+	@media(max-width: 992px){
+		box-shadow: 0 5px 20px rgba(44,1,98,.35);
+		&:hover{
+			box-shadow: 0 5px 22px rgba(44,1,98,.4);
+		}
 	}
 	&:disabled {
 		background-color: #dadada;
@@ -30,10 +36,9 @@
 	}
 	@media(max-width: 992px){
 		font-size:1.3em;
-		padding: 18px calc(1.4% + 15px);
+		padding: 19px calc(2.4% + 20px);
 	}
 	@media(max-width: 380px){
-		margin: 10px auto 0;
 		max-width: 100%;
 	}
 }
@@ -45,12 +50,20 @@
 .btn--form {
 	margin: 1.1em auto 1.5em;
 	box-shadow: 0 10px 40px rgba(255, 205, 52, 0.35);
-	padding: 23px calc(1.9% + 23px);
+	@media (min-width: 900px) {
+		padding: 23px calc(1.9% + 23px);
+	}
+	@media(max-width: 992px){
+		box-shadow: 0 5px 20px rgba(250, 200, 52, 0.35);
+	}
 }
 
 label,.label {
 	display: block;
 	margin-bottom: 1.8em;
+	@media (max-width: 767px) {
+		margin-bottom: .8em;
+	}
 }
 label > span,.label> span {
 	display: block;
@@ -62,7 +75,10 @@ label > span,.label> span {
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 1;
-	color: $accent2;	
+	color: $accent2;
+	@media (max-width: 767px) {
+		margin-left: 8px;
+	}
 }
 
 .form {
@@ -72,6 +88,9 @@ label > span,.label> span {
 	max-width: 970px;
 	margin: auto;
 	padding: 2.7em calc(3vw + 2.6em) 2.9em;
+	@media (max-width: 800px) {
+		padding: 2.6em calc(3vw + 1.8em) 2.5em;
+	}
 	&__wrap {
 		display: -ms-flexbox;
 		display: flex;
@@ -80,6 +99,10 @@ label > span,.label> span {
 		label,.label {
 			flex: 1 0 50%;
 			max-width: 48.2%;
+			@media (max-width: 767px) {
+				flex: 1 0 100%;
+				max-width: 100%;
+			}
 		}
 	}
 	& input,& select {
@@ -98,7 +121,14 @@ label > span,.label> span {
 		appearance: none;
 		transition: .4s ease;
 		overflow: hidden;
-		text-overflow: ellipsis;		
+		text-overflow: ellipsis;
+		@media (max-width: 809px) {
+			height: 56px;
+		}	
+		@media (max-width: 767px) {
+			height: 50px;
+			border-radius: 10px;
+		}		
 	}
 	& select {
 		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' viewBox='0 0 12 7'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%238054b6' d='M10.5 0L12 1.426 6 7 0 1.426 1.5 0 6 4.2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
@@ -131,15 +161,28 @@ label > span,.label> span {
 		justify-content: space-between;
 		flex: .7 0 46%;
 		max-width: 48.2%;
+		@media (max-width: 767px) {
+			flex: 1 0 100%;
+			max-width: 400px;
+			margin-right: auto;
+			margin-left: auto;
+		}
 		input {
 			height: 50px;
 			width: 50%;
 			max-width: 150px;
 			padding: 20px;
 			text-align: center;
+			@media (max-width: 900px) {
+				width: auto;
+				max-width: 110px;
+			}
+			@media (max-width: 767px) {
+				max-width: 143px;
+			}
 		}
 		.btn--xs {
-			padding: 18px 12px;
+			padding: 18px 9px;
 			font-size: 14px;
 			border-radius: 15px;
 			box-shadow: none;
@@ -165,6 +208,13 @@ label > span,.label> span {
 		justify-content: space-between;
 		flex: .7 0 46%;
 		max-width: 48.2%;
+		@media (max-width: 767px) {
+			flex: 1 0 100%;
+			max-width: 100%;
+			max-width: 400px;
+			margin-right: auto;
+			margin-left: auto;
+		}
 		.label {
 			flex: .7 0 46%;
 			max-width: 46.2%;

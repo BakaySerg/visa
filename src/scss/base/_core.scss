@@ -15,13 +15,13 @@ body {
 	overflow: hidden;
 	position: relative;
 	width: 100%;
-	max-width: 1920px;
+	// max-width: 1920px;
 	margin: 0 auto;
 	min-height: 40vh;
-   @media (min-width: 2000px) {
-      border-left: 1px solid #efe1ff;
-      border-right: 1px solid #efe1ff;
-   }
+   // @media (min-width: 2000px) {
+   //    border-left: 1px solid #efe1ff;
+   //    border-right: 1px solid #efe1ff;
+   // }
 }
 .container {
 	position: relative;
@@ -30,6 +30,9 @@ body {
 	width: 100%;
 	max-width: 1200px;
 	z-index: 1;
+   @media (min-width: 2300px) {
+      max-width: 1290px;
+   }
 }
 .text-center {text-align: center;}
 
@@ -43,6 +46,9 @@ body {
    @media (min-width: 2000px){
       font-size: em(72);
    }
+   @media (max-width: 380px) {
+      font-size: calc(1.8vw + 1.8em);
+   }   
    &--white {
       color: #fff;
    }
@@ -122,5 +128,10 @@ figure {
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
+   }
+}
+.hidden-sm {
+   @media (max-width: 719px) {
+      display: none!important;
    }
 }

@@ -24,14 +24,14 @@ $(document).ready(function () {
       return false;
     });
 
-	//parallax
-	// if (window.matchMedia('(min-width: 1025px)').matches) {
-	// 	skrollr.init({
-	// 	smoothScrolling: true,
-	// 	smoothScrollingDuration: 100,
-	// 	forceHeight: !1
-	// 	});
-	// };
+	// parallax
+	if (window.matchMedia('(min-width: 1025px)').matches) {
+		skrollr.init({
+		smoothScrolling: true,
+		smoothScrollingDuration: 100,
+		forceHeight: !1
+		});
+	};
 
 
 	//mask
