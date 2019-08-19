@@ -438,6 +438,9 @@
    flex-wrap: wrap;
    list-style: none;
    counter-reset: step;
+   @media (max-width: 1200px) {
+      padding-left: 8vw;
+   }
    li {
       min-width: 24.8%;
       flex-grow: .2;
@@ -477,15 +480,38 @@
       &:last-child:before {background-image: url(../img/decor/marker-accent.svg)}
    }
 }
-.form {
-   background-color: #fff;
-   border-radius: 15px;
-   max-width: 970px;
-   margin: auto;
-   padding: 2em calc(3vh + 2.2em);
+.form {   
    &-sec {
-      padding: calc(4em + 4vh) 0;
+      padding: calc(6.3em + 6.5vh) 0;
       background: url(../img/form/bg.svg) center no-repeat;
-      background-size: contain;
+      background-size: cover;
+   }
+   &__title {
+      text-align: center;
+      color: $title;
+      font-size: calc(1vw + 1.8em);
+      font-weight: 900;
+      margin-bottom: 0.58em;
+   }
+}
+.aright {
+   padding: 3em 0;
+   .container{
+      background: url(../img/aright/bg.svg) center 18% no-repeat;
+      background-size: contain;      
+   }
+   &__text {
+      padding: 3em 0;
+   }
+   .title {
+      font-size: calc(0.842vw + 2em);
+      line-height: 1.4;
+      margin-bottom: 2em;
+      .ac-xl {
+         padding-bottom: .4em;
+      }
+   }
+   .btn {
+      display: inline-block;
    }
 }

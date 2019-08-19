@@ -42,28 +42,36 @@
 	padding: 17px calc(2.2% + 20px);
 	border-radius: 15px;
 }
+.btn--form {
+	margin: 1.1em auto 1.5em;
+	box-shadow: 0 10px 40px rgba(255, 205, 52, 0.35);
+	padding: 23px calc(1.9% + 23px);
+}
 
 label,.label {
 	display: block;
-	margin-bottom: 3em;
+	margin-bottom: 1.8em;
 }
-
 label > span,.label> span {
 	display: block;
-	margin-left: 5px;
-	margin-bottom: 9px;
+	margin-left: 12px;
+	height: 30px;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 1;
-	color: $accent2;
-	@media (max-width: 670px){
-		margin-bottom: 8px;
-	}
+	color: $accent2;	
 }
+
 .form {
 	max-width: 940px;
-	margin: 0 auto 30px;
-	
+	background-color: #fff;
+	border-radius: 15px;
+	max-width: 970px;
+	margin: auto;
+	padding: 2.7em calc(3vw + 2.6em) 2.9em;
 	&__wrap {
 		display: -ms-flexbox;
 		display: flex;
@@ -71,7 +79,7 @@ label > span,.label> span {
 		justify-content: space-between;
 		label,.label {
 			flex: 1 0 50%;
-			max-width: 48.3%;
+			max-width: 48.2%;
 		}
 	}
 	& input,& select {
@@ -94,26 +102,20 @@ label > span,.label> span {
 	}
 	& select {
 		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' viewBox='0 0 12 7'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%238054b6' d='M10.5 0L12 1.426 6 7 0 1.426 1.5 0 6 4.2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-		background-position: 95% center;
+		background-position: calc(100% - 22px) center;
 		background-repeat: no-repeat;
 	}
 	[type=number] {
 		-webkit-appearance: none;
 		appearance: none;
 	}
-	// & textarea {
-	// 	padding: 14px 12px 15px 20px;
-	// 	resize: vertical;
-	// 	min-height: 128px;
-	// 	margin-bottom: 46px;
-	// 	@media (max-width: 670px){
-	// 		margin-bottom: 35px;
-	// 		min-height: 110px;
-	// 	}
-	// }
-	& input:focus,& textarea:focus{
+	& input:focus,& select:focus{
 		outline-color: transparent;
 		box-shadow: none;
+		border-color: #8054b6;
+	}
+	& input:invalid:focus{
+		border-color: #ff7fae;
 	}
 	&__options {
 		display: -ms-flexbox;
@@ -127,20 +129,96 @@ label > span,.label> span {
 		align-items: center;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		flex: .7 0 46%;
+		max-width: 48.2%;
 		input {
 			height: 50px;
 			width: 50%;
-			max-width: 190px;
+			max-width: 150px;
+			padding: 20px;
+			text-align: center;
 		}
 		.btn--xs {
 			padding: 18px 12px;
 			font-size: 14px;
 			border-radius: 15px;
 			box-shadow: none;
+			flex-grow: .5;
 		}
+		&-remark{
+			display: -ms-flexbox;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 1;
+			color: $accent2;
+			margin-bottom: 0.6em;
+			margin-top: 0.2em;
+		}		
 	}
 	&__people {
 		display: -ms-flexbox;
 		display: flex;
+		justify-content: space-between;
+		flex: .7 0 46%;
+		max-width: 48.2%;
+		.label {
+			flex: .7 0 46%;
+			max-width: 46.2%;
+		}
+	}
+	&__remark {
+		text-align: center;
+		font-size: 12px;
+	}
+}
+.info{
+	position: relative;
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	margin-left: 14px;
+	background-size: contain;
+	background-position: center;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23452263' d='M9.333 12H6.666v-.667c.323-.119.667-.134.667-.49V7.865c0-.356-.344-.413-.667-.532v-.667h2v4.177c0 .356.345.372.667.49zM8 3.833A.834.834 0 1 1 8 5.5a.834.834 0 0 1 0-1.667zM16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM1.334 8A6.674 6.674 0 0 0 8 14.666 6.674 6.674 0 0 0 14.666 8 6.674 6.674 0 0 0 8 1.333 6.674 6.674 0 0 0 1.333 8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+	cursor: pointer;
+	font-style: normal;
+	line-height: 1.4;
+	span {
+		position: absolute;
+		bottom: calc(100% + 12px);
+		left: 50%;
+		width: 266px;
+		box-shadow: 0 5px 20px rgba(98,58,146, .1);
+		background-color: #e1d9eb;
+		font-size: 12px;
+		color: $title;
+		padding: 15px 17px 16px 24px;
+		border-radius: 15px;
+		pointer-events: none;
+		transition: .3s;
+		opacity: 0;
+		visibility: hidden;
+		transform: translate(-50%,-8px);
+		&:after {
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: calc(50% - 7px);
+			border-top: 5px solid #e1d9eb;
+			border-right: 7px solid transparent;
+			border-left: 7px solid transparent;
+		}
+	}
+	&--show {
+		span {
+			opacity: 1;
+			visibility: visible;
+			transform: translateX(-50%);
+			pointer-events: auto;
+		}
 	}
 }

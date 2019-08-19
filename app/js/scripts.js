@@ -71,6 +71,12 @@ $(document).ready(function () {
 	  "locale": {"firstDayOfWeek": 1 }
 	});
 
+	$(".info").on('click', function() {
+		var info = $(this);
+		info.toggleClass('info--show');
+		setTimeout(function(){info.removeClass('info--show')},8000);
+	});
+
 	// submit
 	// var form = document.forms['feedback'];
 
