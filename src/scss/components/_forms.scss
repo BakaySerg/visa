@@ -296,6 +296,9 @@ label > span,.label> span {
 		opacity: 0;
 		visibility: hidden;
 		transform: translate(-50%,-8px);
+		@media (max-width: 420px) {
+			transform: translate(-70%,0px);
+		}
 		&:after {
 			content: '';
 			position: absolute;
@@ -312,6 +315,12 @@ label > span,.label> span {
 			visibility: visible;
 			transform: translateX(-50%);
 			pointer-events: auto;
+			@media (max-width: 420px) {
+				transform: translate(-83%);
+				&:after{
+					left: 80%;
+				}
+			}
 		}
 	}
 }

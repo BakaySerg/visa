@@ -49,4 +49,8 @@ svg {max-width: 100%;}
 
 p {padding-bottom: 1.1em;}
 
+select::-ms-expand {
+	display: none;
+}
+
 .cbalink, div[style^="text-align"] {display: none;}

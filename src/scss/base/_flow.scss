@@ -74,6 +74,9 @@
       margin-left: auto;
       margin-right: auto;
       user-select: none;
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+         display: block;
+      }
    }
    &__dialog {
       position: absolute;
@@ -86,6 +89,12 @@
       text-align: left;
       color: $primary2;
       padding: 2em 3em 2em 2em;
+      @supports (-ms-ime-align:auto){
+         left: -5em;
+      }
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+         left: -6em;
+      }
       @media (max-width: 1399px){
          top: -2.4em;
          left: -4.3em;
@@ -161,6 +170,7 @@
 	height: calc(11vw + 8em);
    background-image: url(../img/intro/el-2.svg);
 }
+
 //Previosly
 .previously {
    padding: calc(9.3em + 3.1vh) 0 2.4em;
@@ -250,6 +260,22 @@
             right: 4vw;
             background-image: url(../img/fed/not-fact.svg);
          }
+         @supports (-ms-ime-align:auto) {
+            max-width: 640px; 
+            position: absolute; 
+            top : 0; 
+            right : -4em;
+            font-size: calc(1.2em + 0.4vw);
+            padding: 2.6em 2.6em 2.6em 7.2em
+         }
+         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active){
+            max-width: 640px; 
+            position: absolute; 
+            top : 0; 
+            right : -4em;
+            font-size: calc(1.2em + 0.4vw);
+            padding: 2.6em 2.6em 2.6em 7.2em
+         }
       }
    }
    .decor {
@@ -315,7 +341,6 @@
    right: 7%;
 }
 
-//
 .blueness-wrap {
    position: relative;
    display: -ms-flexbox;
@@ -795,7 +820,7 @@
    .container{
       background: url(../img/aright/bg.svg) center 18% no-repeat;
       background-size: contain; 
-      @media (max-width: 1199px) {
+      @media (max-width: 990px) {
          background-position: center 38%;
          background-size: 160% auto;
       }     

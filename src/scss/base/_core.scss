@@ -142,6 +142,9 @@ figure {
    @media (max-width: 1199px) {
       display: none;
    }
+   @media only screen and (device-width: 768px){
+      display: none;
+   }
    &__el {
       position: absolute;
       background-position: center;

@@ -28,7 +28,7 @@ $(document).ready(function () {
         var hedHeight = $(".top").height();
         var winTop = $(window).scrollTop();
 
-          if(winTop >= hedHeight + 500){
+          if(winTop >= hedHeight + 200){
            $("#top-fixed").addClass("slideInDown");
          } else {
            $("#top-fixed").removeClass("slideInDown");

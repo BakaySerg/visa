@@ -2,4 +2,4 @@
 //= ./skrollr.min.js
 //= ./jquery.maskedinput.min.js
 //= ./flatpickr2.min.js
-//= ./magnific-popup/jquery.magnific-popup.min.js
+//- ./magnific-popup/jquery.magnific-popup.min.js
