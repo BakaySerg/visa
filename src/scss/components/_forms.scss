@@ -23,23 +23,30 @@
 		box-shadow: 0 5px 20px rgba(44,1,98,.3);
 		color: #fff;
 	}
-	@media(max-width: 992px){
-		box-shadow: 0 5px 20px rgba(44,1,98,.35);
-		&:hover{
-			box-shadow: 0 5px 22px rgba(44,1,98,.4);
-		}
-	}
 	&:disabled {
 		background-color: #dadada;
 		color: #897f93;
 		border-color: #dadada;
 	}
+	@media (max-width: 1399px){
+		font-size: 1.3em;
+	}	
 	@media(max-width: 992px){
 		font-size:1.3em;
 		padding: 19px calc(2.4% + 20px);
+		box-shadow: 0 4px 15px rgba(44,1,98,.3);
+		&:hover{
+			box-shadow: 0 5px 22px rgba(44,1,98,.4);
+		}
 	}
 	@media(max-width: 380px){
 		max-width: 100%;
+		font-size: 1.2em;
+		box-shadow: none;
+		padding: 18px;		
+		&:not(.btn--sm):not(.btn--xs):not(.js-scroll) {
+			width: 100%;
+		}
 	}
 }
 .btn--sm {
@@ -56,13 +63,22 @@
 	@media(max-width: 992px){
 		box-shadow: 0 5px 20px rgba(250, 200, 52, 0.35);
 	}
+	@media (max-width: 380px) {
+		box-shadow: none;
+	}
 }
 
 label,.label {
 	display: block;
 	margin-bottom: 1.8em;
+	@media (max-width: 1399px) and (max-height: 700px){
+		margin-bottom: 1.3em;
+	}
 	@media (max-width: 767px) {
 		margin-bottom: .8em;
+	}
+	@media (max-width: 380px) {
+		margin-bottom: .6em;
 	}
 }
 label > span,.label> span {
@@ -90,6 +106,13 @@ label > span,.label> span {
 	padding: 2.7em calc(3vw + 2.6em) 2.9em;
 	@media (max-width: 800px) {
 		padding: 2.6em calc(3vw + 1.8em) 2.5em;
+	}
+	@media (max-width: 480px) {
+		padding: 2em calc(3vw + 1.2em) 2.2em;
+	}
+	@media (max-width: 380px) {
+		border-radius: 0;
+		padding: 1.9em calc(3vw + 0.9em) 2.2em;
 	}
 	&__wrap {
 		display: -ms-flexbox;
@@ -122,12 +145,16 @@ label > span,.label> span {
 		transition: .4s ease;
 		overflow: hidden;
 		text-overflow: ellipsis;
-		@media (max-width: 809px) {
+		@media (max-width: 1399px){
 			height: 56px;
-		}	
+		}			
 		@media (max-width: 767px) {
 			height: 50px;
 			border-radius: 10px;
+		}
+		@media (max-width: 360px) {
+			height: 48px;
+			border-radius: 8px;
 		}		
 	}
 	& select {
@@ -171,7 +198,7 @@ label > span,.label> span {
 			height: 50px;
 			width: 50%;
 			max-width: 150px;
-			padding: 20px;
+			padding: 6px 20px;
 			text-align: center;
 			@media (max-width: 900px) {
 				width: auto;
@@ -180,6 +207,13 @@ label > span,.label> span {
 			@media (max-width: 767px) {
 				max-width: 143px;
 			}
+			@media (max-width: 480px) {
+				max-width: 110px;
+			}
+			@media (max-width: 360px) {
+				height: 48px;
+				max-width: 104px;
+			}
 		}
 		.btn--xs {
 			padding: 18px 9px;
@@ -187,6 +221,15 @@ label > span,.label> span {
 			border-radius: 15px;
 			box-shadow: none;
 			flex-grow: .5;
+			@media (max-width: 480px) {
+				padding: 18px 5px;
+				flex-grow: .3;
+			}
+			@media (max-width: 360px) {
+				padding: 17px 3px;
+				font-size: 13px;
+				border-radius: 8px;
+			}
 		}
 		&-remark{
 			display: -ms-flexbox;

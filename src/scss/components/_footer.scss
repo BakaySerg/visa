@@ -4,16 +4,23 @@
    font-weight: 500;
    padding: 0 15px;
    margin-top: 3vh;
+   @media (max-width: 600px) {
+      font-size: .84em;
+   }
    .container {
       padding: 28px 0;
       border-top: 1px solid #d3cfd8;
+      @media (max-width: 1200px) {
+         padding: 25px 15px;
+         text-align: center;
+      }
       p {
          margin-bottom: 0;
          padding: 3px 0;
       }
    }
    &__develop {
-      text-align: center;
+      // text-align: center;
       padding: 20px 15;
    }
 }

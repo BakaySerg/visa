@@ -9,9 +9,13 @@
    padding: 9px 0;
    transform: translateY(-100%);
    transition: .6s;
-   // &.slideInDown {
-   //    transform: translateY(0%);
-   // }
+   &.slideInDown {
+      transform: translateY(0%);
+   }
+   @media (min-width: 990px) {
+      padding-left: 15px;
+      padding-right: 15px;
+   }
    @media (max-width: 719px) {
       & .btn {
          padding: 14px calc(2.4% + 5px);
@@ -44,6 +48,10 @@
    width: 100%;
    padding: calc(3.21vh + 15px) 0;
    z-index: 9;
+   @media (min-width: 990px) {
+      padding-left: 15px;
+      padding-right: 15px;
+   }
    @media (max-width: 800px){
       padding: calc(2.6vh + 14px) 0;
    }
@@ -93,4 +101,8 @@
       letter-spacing: -.03em
    }
 }
-.header__phone--sm {font-size: calc(.4vw + 1.022em);}
+.header__phone--sm {
+   @media (min-width: 366px) {
+      font-size: calc(.4vw + 1.022em);      
+   }
+}

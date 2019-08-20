@@ -28,7 +28,7 @@ $(document).ready(function () {
         var hedHeight = $(".top").height();
         var winTop = $(window).scrollTop();
 
-          if(winTop >= hedHeight + 40){
+          if(winTop >= hedHeight + 500){
            $("#top-fixed").addClass("slideInDown");
          } else {
            $("#top-fixed").removeClass("slideInDown");
@@ -43,8 +43,19 @@ $(document).ready(function () {
       return false;
     });
 
+	//scroll to target
+	$(".js-scroll").click(function(e) {
+	  $("html, body").animate({
+	     scrollTop: $($(this).attr("href")).offset().top - 80 +"px"
+	  }, {
+	     duration: 1100,
+	     easing: "swing"
+	  });
+	  e.preventDefault();
+	});
+
 	// parallax
-	if (window.matchMedia('(min-width: 1025px)').matches) {
+	if (window.matchMedia('(min-width: 1200px)').matches) {
 		skrollr.init({
 		smoothScrolling: true,
 		smoothScrollingDuration: 100,
@@ -101,9 +112,3 @@ $(document).ready(function () {
  //   });
 
 });
-
-// $(function() {
-// 	setTimeout(function() {
-// 		document.body.classList.remove("initial")
-// 	}, 400);
-// });

@@ -15,13 +15,8 @@ body {
 	overflow: hidden;
 	position: relative;
 	width: 100%;
-	// max-width: 1920px;
 	margin: 0 auto;
 	min-height: 40vh;
-   // @media (min-width: 2000px) {
-   //    border-left: 1px solid #efe1ff;
-   //    border-right: 1px solid #efe1ff;
-   // }
 }
 .container {
 	position: relative;
@@ -45,6 +40,19 @@ body {
    margin-bottom: .4em;
    @media (min-width: 2000px){
       font-size: em(72);
+   }
+   @media (max-width: 1399px){
+      font-size: calc(1.9vw + 1.9em);
+      max-width: 760px;
+   }
+   @media (max-width: 1200px){
+      max-width: 670px;
+      margin-bottom: .6em;
+      padding-left: 10px;
+      padding-right: 10px;
+   }
+   @media (max-width: 880px){
+      max-width: 620px;
    }
    @media (max-width: 380px) {
       font-size: calc(1.8vw + 1.8em);
@@ -105,6 +113,11 @@ body {
       width: 32px;
       height: 44px;
    }
+   @media (max-width: 480px){
+      width: 30px;
+      height: 32px;
+      margin: 7px auto;
+   }
    &--dark {
       background-image: url(../img/decor/arrow-down-dark.png);
    }
@@ -118,9 +131,15 @@ figure {
 }
 .decor {
    position: absolute;
-   // pointer-events: none;
+   pointer-events: none;
    z-index: 1;
-   @media (max-width: 1023px) {
+   @media (max-width: 1600px) {
+      font-size: .7em;
+   }
+   @media (max-width: 1366px) {
+      font-size: .6em;
+   }
+   @media (max-width: 1199px) {
       display: none;
    }
    &__el {
@@ -135,3 +154,4 @@ figure {
       display: none!important;
    }
 }
+.no-wrap {white-space: nowrap;}
