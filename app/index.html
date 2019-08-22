@@ -207,15 +207,7 @@
 						<input type="date" name="date">						
 					</label>
 				</div>
-				<div class="form__options">
-					<div class="form__code label">
-						<div class="form__code-remark">
-							<a href="#">Отправить проверочный код</a>
-							<i class="form__code-info info"><span>Нам нужно удостовериться, что Вы указали верный номер телефона, чтобы мы могли с вами связаться. Мы его никому не даем</span></i>
-						</div>
-						<input type="text" pattern="[0-9]{4}" title="Код из смс (4 цифры)" required placeholder="_ _ _ _">
-						<button type="button" class="btn btn--xs" disabled>Подтвердить телефон</button>
-					</div>
+				<div class="form__options">					
 					<div class="form__people">
 						<div class="label">
 							<span>Кол-во взрослых</span>
@@ -233,6 +225,14 @@
 								<option value="">2</option>
 							</select>
 						</div>
+					</div>
+					<div class="form__code label order-md-first">
+						<div class="form__code-remark">
+							<a href="#">Отправить проверочный код</a>
+							<i class="form__code-info info"><span>Нам нужно удостовериться, что Вы указали верный номер телефона, чтобы мы могли с вами связаться. Мы его никому не даем</span></i>
+						</div>
+						<input type="text" pattern="[0-9]{4}" title="Код из смс (4 цифры)" required placeholder="_ _ _ _">
+						<button type="button" class="btn btn--xs" disabled>Подтвердить телефон</button>
 					</div>				
 				</div>
 				<button class="btn btn--form">Оформить заказ</button>
@@ -262,7 +262,7 @@
 			<div class="container">
 				<h2 class="title title--center">Есть вопросы - пишите</h2>
 				<!-- VK-comments -->
-				<!-- <script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
+				<script type="text/javascript" src="https://vk.com/js/api/openapi.js?162"></script>
 
 				<script type="text/javascript">
 					VK.init({apiId: 7103711, onlyWidgets: true});
@@ -272,7 +272,7 @@
 
 				<script type="text/javascript">
 					VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
-				</script> -->
+				</script>
 			</div>
 		</section>
 

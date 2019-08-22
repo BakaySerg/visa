@@ -754,6 +754,7 @@
       @media (max-width: 600px) {
          flex: 1 0 100%;
          margin: 0 0 calc(2vh + .3em);
+         padding-left: .8em;
       }      
       &:before {
          counter-increment:step;
@@ -768,6 +769,9 @@
          background: url(../img/decor/marker.svg) center no-repeat;
          background-size: contain;
          margin-right: .34em;
+         @media (max-width: 480px) {
+            margin-right: 0.54em;
+         }
       }
       &:last-child:before {background-image: url(../img/decor/marker-accent.svg)}
    }
@@ -865,4 +869,18 @@
 
 .ask {
    padding: 1.3em 0;
+}
+@media (max-width: 359px) {
+   .flatpickr-calendar.open{max-width: 288px;}
+   .flatpickr-day{
+      max-width: 36px;
+      height: 36px;
+      line-height: 36px;
+   }
+   .flatpickr-rContainer{max-width: 100%;}
+   .dayContainer{
+      min-width: 288px;
+      width: 288px;
+      max-width: 100%;
+   }
 }
